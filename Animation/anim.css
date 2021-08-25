@@ -1,0 +1,139 @@
+/* .div_background{
+    border: 1px solid;
+    width: 500px;
+    height: 500px;
+    background-image: url(chess.jpg);
+    background-size: cover;
+    margin: auto;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div_horse{
+    position: absolute;
+    right: 62px;
+    top: -50px;
+    animation-name: horse;
+    animation-duration: 7s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+
+
+}
+.div_solider{
+    position: absolute;
+    bottom: 75px;
+    left: 170px;
+    animation-name: solider;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+}
+
+@keyframes horse{
+    0%{right: 62px;top: -50px;}
+    10%{right: 62px;top: 60px;}
+    20%{right: 120px;top: 60px;}
+    30%{right: 62px;top: -50px;}
+    40%{right: 62px;top: 60px;}
+    50%{right: 5px;top: 60px;}
+    70%{right: 62px;top: -50px;}
+    80%{right: 62px;top: 20px;}
+    90%{right: 180px;top: 10px;}
+    100%{right: 62px;top: -50px;}
+}
+
+@keyframes solider{
+    0%{bottom: 75px;left: 170px;}
+    30%{bottom: 180px;left: 170px;}
+    50%{bottom: 75px;left: 170px;}
+    70%{bottom: 130px;left: 170px;}
+    100%{bottom: 75px;left: 170px;}
+    
+} */
+
+
+
+
+
+.div_background{
+    border: 1px solid;
+    width: 800px;
+    display: flex;
+    height: 550px;
+    background-image: url(football.jpg);
+    background-size: cover;
+    margin: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 220px;
+    bottom: 240px;
+    animation-name: ball;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+    /* animation-direction: reverse; */
+    /* animation-fill-mode: forwards; */
+    
+}
+
+.div_player1{
+    position: absolute;
+    transform: rotateY(0.5turn);
+    right: 150px;
+    animation-name: player1;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+.div_player2{
+    position: absolute;
+    left: 150px;
+    animation-name: player2;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+.div_player3{
+    position: absolute;
+    top: 110px;
+    transform:rotateY(0.5turn);
+    animation-name: player3;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+
+@keyframes ball{
+    0%{right: 220px;bottom: 240px;}
+    25%{right: 560px;bottom: 240px;}
+    50%{right: 400px;bottom: 330px;}
+    75%{right: 560px;bottom: 240px;}
+    100%{right: 220px;bottom: 240px;}
+}
+
+@keyframes player1{
+    0%{right: 150px;}
+    50%{right: 180px;}
+    100%{right: 150px;}
+}
+
+@keyframes player2{
+    0%{left: 150px;}
+    50%{left: 180px;}
+    100%{left: 150px;}
+}
+
+@keyframes player3{
+    0%{top: 110px;}
+    50%{top: 150px;}
+    100%{top: 110px;}
+}
